@@ -50,7 +50,7 @@ export default function ClientAboutPage() {
               transition={{ duration: 0.55, delay: 0.05 }}
               className="mt-3 text-4xl font-extrabold tracking-tight md:text-6xl"
             >
-              Superlative Guest Posting—Simplified
+              Superlative Guest Posting, Simplified
             </motion.h1>
 
             <motion.p
