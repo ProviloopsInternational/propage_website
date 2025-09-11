@@ -50,7 +50,7 @@ export default function ClientAboutPage() {
               transition={{ duration: 0.55, delay: 0.05 }}
               className="mt-3 text-4xl font-extrabold tracking-tight md:text-6xl"
             >
-              Superlative Guest Posting, Simplified
+              Links With Lasting Value
             </motion.h1>
 
             <motion.p
@@ -59,9 +59,8 @@ export default function ClientAboutPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-4 max-w-xl text-white/90"
             >
-              We remove the friction from blogger outreach and link building. Our blend of
-              smart automation and hands-on editorial delivers clean, contextual{' '}
-              <span className="font-semibold">do-follow</span> placements—without the chaos.
+              Finding the right sites, building relationships, pitching content, and chasing approvals can eat up valuable time. 
+              We handle all of that for you, so you can focus on growing your brand.
             </motion.p>
 
             <motion.div
@@ -157,17 +156,10 @@ export default function ClientAboutPage() {
             Offering Superlative Guest Posting Services
           </h2>
           <p className="mt-4 text-gray-700">
-            Pro Page Digital exists to make life easier for SEO teams. Blogger outreach and link
-            building can be tedious—relationship building, pitching, approvals, and quality control
-            eat time and budget. We streamline the journey so you can focus on strategy while we
-            handle the moving parts.
+            With a blend of smart tools and hands-on expertise, we secure placements that are relevant, safe, and built to last. 
+            You’ll always have full visibility, and every link we deliver is designed to bring real, long-term value to your SEO.
           </p>
-          <p className="mt-4 text-gray-700">
-            Our platform blends automation with expert oversight. The result: reliable,
-            context-rich placements,{' '}
-            <span className="font-semibold">do-follow links that actually add value</span>, and a
-            predictable process from brief to live URL.
-          </p>
+          
         </div>
 
         {/* three pillars */}
@@ -176,17 +168,17 @@ export default function ClientAboutPage() {
             {
               title: 'Simplicity',
               desc:
-                'Clear steps, fast approvals, and visibility at every stage—no guesswork, no clutter.',
+                'A clear process, quick approvals, and transparent updates every step of the way.',
             },
             {
-              title: 'Scale',
+              title: 'Scalability ',
               desc:
-                'A vetted global network across niches and regions so you can ramp without sacrificing fit.',
+                'Access to a wide network of publishers across niches and regions to fuel your growth.',
             },
             {
               title: 'Quality',
               desc:
-                'Human editorial, publisher guidelines, and clean anchors to protect your brand equity.',
+                'Natural content, clean anchors, and contextual placements that strengthen your business.',
             },
           ].map((c, i) => (
             <motion.div
@@ -227,22 +219,22 @@ export default function ClientAboutPage() {
             {
               step: '1) Brief & Targeting',
               desc:
-                'Define goals, niches, regions, anchor strategy, and acceptance criteria.',
+                'We start by understanding your goals. Together, we define the right niches, regions, anchors, and guidelines to make sure every placement fits your strategy.',
             },
             {
               step: '2) Prospect & Negotiate',
               desc:
-                'We source real sites, vet metrics, pitch editors, and secure terms.',
+                'Our team finds real, relevant sites, vets them for quality, and works directly with editors to secure the best opportunities.',
             },
             {
               step: '3) Content & Approval',
               desc:
-                'On-brand drafts, clean anchors, publisher-ready formatting, and smooth approvals.',
+                'We create engaging, publisher-ready content with natural anchors. You’ll review and approve before anything goes live.',
             },
             {
               step: '4) Placement & Reporting',
               desc:
-                'Do-follow links go live; you get transparent reporting and status updates.',
+                'Once links are published, we share clear reports with live URLs, anchors, and status updates so you’re always in the loop.',
             },
           ].map((s, i) => (
             <motion.div

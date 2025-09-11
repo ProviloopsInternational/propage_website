@@ -56,8 +56,8 @@ export default function ClientServicesPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-4 max-w-xl text-white/90"
             >
-              Scale outreach with clean, contextual <span className="font-semibold">do-follow</span> links. We blend
-              smart automation with human editorial, so placements are relevant, safe, and worth it.
+              We make guest posting simple, transparent, and effective. Our focus is on securing placements that build your authority and bring long-term value, not just quick wins. 
+              With us, you’ll always know where your content is going, why it matters, and how it’s helping your brand grow.
             </motion.p>
 
             <motion.div
@@ -164,22 +164,22 @@ export default function ClientServicesPage() {
             {
               title: 'Domain Prospecting',
               desc:
-                'We identify real, niche-relevant sites using rigorous vetting: audience fit, traffic signals, guidelines, and risk checks.',
+                'We handpick real, relevant sites with solid traffic and engaged audiences. Every site goes through a careful check so your links stay safe and impactful.',
             },
             {
               title: 'Outreach Campaigns',
               desc:
-                'Personalized editor pitching and negotiation to secure placements that match your quality and budget.',
+                'Our team reaches out to publishers directly, building genuine connections to land placements that make sense for your niche and budget.',
             },
             {
-              title: 'Writing of Guest Posts',
+              title: 'Guest Post Writing',
               desc:
-                'Editorially sound, publisher-ready drafts with clean anchors and topical alignment for smooth approvals.',
+                'We craft articles that feel natural, add value to the publisher’s audience, and blend your anchors smoothly for seamless approvals.',
             },
             {
-              title: 'Live Links Reporting',
+              title: 'Live Links Tracking ',
               desc:
-                'Transparent tracking from brief to live URL—complete with link status, anchors, and placement details.',
+                'You get full visibility with detailed reports on every placement, from draft to live link.',
             },
           ].map((c, i) => (
             <motion.div
@@ -209,25 +209,25 @@ export default function ClientServicesPage() {
         {/* Differentiators */}
         <div className="mx-auto mt-14 max-w-5xl">
           <h3 className="text-xl font-extrabold tracking-tight text-gray-900">
-            What sets us apart
+            What makes us different
           </h3>
           <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {[
               {
-                t: 'Wide Range of Niches',
-                d: 'We cover 100+ niches and regions to maintain growth momentum as your needs evolve.',
+                t: 'Wide Coverage',
+                d: 'Access to 100+ niches and markets so you never run out of growth options.',
               },
               {
-                t: 'Keyword-Rich Anchors',
-                d: 'Anchors are relevant, varied, and context-aware—supporting rankings without over-optimization.',
+                t: 'Smart Anchors',
+                d: 'Natural, keyword-rich anchors that support rankings without raising red flags.',
               },
               {
-                t: 'Peak Traffic Spheres',
-                d: 'We prioritize sites with meaningful organic visibility so each link carries real discovery potential.',
+                t: 'Real Traffic Sites',
+                d: 'We focus on publishers with meaningful organic visibility, so every link has discovery power.',
               },
               {
-                t: 'Exceptional Content',
-                d: 'Senior editors craft persuasive, publisher-aligned copy for faster approvals and better performance.',
+                t: 'Quality Content',
+                d: 'Experienced writers deliver engaging, SEO-friendly articles that pass publisher checks with ease.',
               },
             ].map((x) => (
               <div key={x.t} className="flex items-start gap-3 rounded-xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
@@ -249,13 +249,8 @@ export default function ClientServicesPage() {
             B. Link Insertion Services
           </h2>
           <p className="mt-4 text-gray-700">
-            When acquiring a fresh guest post isn’t the fastest route, link insertions—also known as niche edits—place
-            your anchor into existing, already-indexed articles. It’s efficient, safe when done right, and great for
-            accelerating early traction.
-          </p>
-          <p className="mt-4 text-gray-700">
-            Pro Page Digital secures these placements through trusted publisher relationships and an editorial-led
-            process—so your backlinks are contextual, compliant, and durable.
+            Sometimes the fastest way to boost results isn’t a new article—it’s placing your link into content that’s already live and ranking. 
+            Our link insertion (niche edit) service does exactly that, giving you contextual backlinks in existing, trusted articles.
           </p>
         </div>
 
@@ -263,19 +258,19 @@ export default function ClientServicesPage() {
         <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-3">
           {[
             {
-              title: 'Targeted Opportunities',
+              title: 'Opportunity Mapping',
               desc:
-                'We map relevant, ranking articles and evaluate insertion points to maximize contextual fit and intent.',
+                'We find relevant, ranking pages where your link fits naturally.',
             },
             {
-              title: 'Editorial Negotiation',
+              title: 'Publisher Outreach',
               desc:
-                'We handle outreach, compliance, and terms with publishers to keep the path from request to live link short.',
+                'We negotiate with site owners and editors on your behalf to secure placements that last.',
             },
             {
               title: 'Backlink Management',
               desc:
-                'Each insertion is tracked, reported, and reviewed for quality and ongoing visibility.',
+                'Every insertion is tracked and reported, so you know exactly what you’re getting.',
             },
           ].map((c, i) => (
             <motion.div

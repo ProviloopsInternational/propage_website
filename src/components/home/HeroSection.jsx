@@ -45,15 +45,14 @@ export default function Hero() {
         {/* LEFT — Text */}
         <div className="text-white">
           <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
-            The Finest Guest Posting Services
+            Your Growth, Backed by Quality Links
           </h1>
 
           <p className="mt-5 text-base leading-relaxed text-white/90 md:text-lg">
-            For quite some time, we have exceptional expertise dealing with customized guest post
-            campaigns. We take immense pleasure working with a great number of renowned blogs
-            globally. In our services appropriate <span className="font-semibold">Do-Follow links</span> carrying
-            significant value are offered. With us, management and approval of top-quality content
-            is a smooth process.
+
+            We specialize in creating and placing high-quality guest posts that build authority and drive results. 
+            <span className="font-semibold">Our team </span>works closely with trusted blogs and publishers worldwide, so every link you get is relevant, do-follow, and valuable for your SEO.
+            From content creation to placement approval, we make the entire process smooth and transparent, giving you links that actually move the needle.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

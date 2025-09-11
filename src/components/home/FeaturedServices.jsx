@@ -5,9 +5,9 @@ import theme from '@/theme/theme';
 
 const SERVICES = [
   {
-    title: 'Blogger Outreach Service',
+    title: 'Guest Posting',
     desc:
-      'We identify real, niche-relevant blogs, vet traffic and authority, and pitch editors with tailored angles. Our team negotiates placements and manages the full editorial workflow so you earn clean, contextual, do-follow mentions that move rankings.',
+      'Get high-quality, in-content backlinks through our tailored guest posting and link building services. Trusted by agencies and marketing teams to boost authority, traffic, and rankings.',
     highlights: [
       'Real-site prospecting & vetting',
       'Editor outreach & negotiation',
@@ -15,9 +15,9 @@ const SERVICES = [
     ],
   },
   {
-    title: 'Content Marketing',
+    title: 'Ultra High Quality Backlinks',
     desc:
-      'We design topic clusters and briefs, produce long-form content in your brand voice, and distribute it across channels. Each piece is optimized for search and periodically refreshed to keep performance compounding over time.',
+      'We focus on premium link building with strict quality checks to ensure you get safe, white-hat backlinks that truly strengthen your site’s authority.',
     highlights: [
       'Strategy & editorial calendar',
       'SEO-ready articles & visuals',
@@ -25,9 +25,9 @@ const SERVICES = [
     ],
   },
   {
-    title: 'Niche Edits',
+    title: 'Link Insertion',
     desc:
-      'Acquire contextual links by inserting your anchors into existing, already-ranking articles. We prioritize relevance and safety—no private networks—so you gain quick traction without compromising your domain’s risk profile.',
+      'Secure niche-relevant links placed naturally within existing content on authority blogs, helping boost your rankings with contextually relevant edits.',
     highlights: [
       'Contextual placements in ranking posts',
       'Publisher network access',
@@ -35,9 +35,9 @@ const SERVICES = [
     ],
   },
   {
-    title: 'Branded Publications',
+    title: 'Country Specific Link',
     desc:
-      'We craft thought-leadership pieces and place them on trusted media to expand reach and credibility. From messaging to legal review and publication logistics, we handle the details while you get brand visibility where it counts.',
+      'Reach your audience in specific regions with backlinks from trusted websites based in your target country, ensuring local relevance and impact.',
     highlights: [
       'Ghostwriting in brand voice',
       'Media list & pitching',
@@ -45,9 +45,9 @@ const SERVICES = [
     ],
   },
   {
-    title: 'Product Reviews',
+    title: 'Authority Link',
     desc:
-      'Structured, conversion-ready reviews that help buyers decide faster. We cover real-world use, pros/cons, comparisons, and schema so reviews rank well and inform customers across search and partner sites.',
+      'Strengthen your domain authority with backlinks from high-authority sites that improve credibility and search engine rankings.',
     highlights: [
       'Hands-on or spec-based testing',
       'Comparison tables & schema',
@@ -55,9 +55,9 @@ const SERVICES = [
     ],
   },
   {
-    title: 'Featured Articles',
+    title: 'Media Placement',
     desc:
-      'High-visibility editorials on authority sites—byline pieces, interviews, or features—that elevate brand authority and pass meaningful link equity. We also prepare amplification assets for social and newsletters.',
+      'Get featured on trusted media outlets with backlinks from reputable and penalty-free news and magazine websites.',
     highlights: [
       'Authority site placements',
       'Interview or byline formats',
@@ -135,7 +135,7 @@ export default function FeaturedServices({ items = SERVICES }) {
             Featured Services
           </h2>
           <p className="mt-3 text-gray-600">
-            Purpose-built offerings to grow authority, traffic, and trust.
+            Turning content into powerful backlinks.
           </p>
         </div>
 

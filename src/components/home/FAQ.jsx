@@ -6,34 +6,34 @@ import theme from '@/theme/theme';
 
 const ITEMS = [
   {
-    title: 'Outstanding Blogger Outreach',
+    title: 'Smart Blogger Outreach',
     body:
-      'We earn authentic, editorial links on real sites—relevance first, clean anchors, and zero PBNs. Every placement is vetted for audience fit and long-term value.',
+      'We build real connections with trusted websites and earn genuine editorial links. Every site is carefully reviewed to make sure it’s relevant, safe, and valuable for the long run.',
   },
   {
-    title: 'Country Wise Lists',
+    title: 'Localized Publisher Lists',
     body:
-      'Pick locally relevant categories with confidence. Our country-wise publisher lists are curated by language, audience, and compliance to match your market.',
+      'Target the markets that matter most. Our country-specific lists are organized by language, audience, and industry, so your links reach the right people.',
   },
   {
-    title: 'Wide-Reaching Guest Posts Opportunities',
+    title: 'Guest Post Opportunities Across Industries',
     body:
-      'Our outreach engine spans 100+ niches across B2B and B2C. From SaaS and FinTech to Health, Travel, and Lifestyle, we source context that actually ranks.',
+      'Our outreach covers 100+ niches in both B2B and B2C. Whether it’s SaaS, Finance, Health, Travel, or Lifestyle, we place your content where it actually gets seen and ranks.',
   },
   {
-    title: 'Devoted Officials',
+    title: 'Dedicated Account Manager',
     body:
-      'Work with a dedicated manager who’s accountable for strategy, timelines, and approvals—so communication stays clear and execution stays fast.',
+      'You’ll have a manager focused on your campaign from start to finish, keeping strategies on track and communication clear at every step.',
   },
   {
-    title: 'First-class Guest Post Content',
+    title: 'Quality Guest Post Content',
     body:
-      'Senior editors craft research-backed, on-brand articles that meet publisher guidelines and SEO best practices—ready for smooth approvals.',
+      'Our experienced writers and editors create research-backed articles that fit your brand, follow publisher guidelines, and align with SEO best practices.',
   },
   {
-    title: 'Prominent Management Service',
+    title: 'Reliable Campaign Management',
     body:
-      'Responsive support with 24/7 availability, status updates, and transparent reports. Clients stay because the process is predictable and effortless.',
+      'We make the process easy with fast responses, regular updates, and transparent reporting—so you always know what’s happening and when.',
   },
 ];
 
@@ -117,7 +117,7 @@ export default function FAQ({ items = ITEMS }) {
             Frequently Asked Questions
           </h2>
           <p className="mt-3 text-gray-600">
-            What you can expect from Pro Page Digital—clear process, quality links, and responsive support.
+            Here’s what you can count on with Pro Page Digital: a straightforward process, quality links, and a team that’s always ready to help.
           </p>
         </div>
 

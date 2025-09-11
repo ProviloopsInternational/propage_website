@@ -1,19 +1,16 @@
 import './globals.css';
 import Header from '@/components/global/Header';
-import { Inter } from 'next/font/google';
 import Footer from '@/components/global/Footer';
 import Script from 'next/script';
 import AnalyticsTracker from '@/lib/AnalyticsTracker';
 import ScrollToTopButton from '../components/global/ScrollToTopButton';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon_dark.png" media="(prefers-color-scheme: light)" />
-        <link rel="icon" href="/favicon_light.png" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.ico" media="(prefers-color-scheme: light)" />
+        <link rel="icon" href="/favicon.ico" media="(prefers-color-scheme: dark)" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
 
@@ -34,12 +31,13 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={inter.className}>
+      {/* Use your own CSS (globals.css sets Arial/Helvetica already) */}
+      <body className="min-h-dvh antialiased">
         <Header />
         <AnalyticsTracker />
         {children}
         <Footer />
-        <ScrollToTopButton/>
+        <ScrollToTopButton />
       </body>
     </html>
   );

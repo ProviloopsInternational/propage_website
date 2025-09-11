@@ -105,7 +105,7 @@ export default function ClientContactPage({
             <div className="rounded-2xl bg-white/95 p-6 text-black shadow-xl ring-1 ring-black/5 backdrop-blur">
               <div className="text-sm text-gray-600">Prefer email or phone?</div>
               <div className="mt-2 text-lg font-semibold text-gray-900">hello@propagedigital.com</div>
-              <div className="text-gray-700">+00 000 000 0000</div>
+              <div className="text-gray-700">+44 (746) 6172010</div>
               <div className="mt-3 text-sm text-gray-600">24/7 support · Typical response time: same day</div>
             </div>
           </div>

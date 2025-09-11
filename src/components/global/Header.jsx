@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import theme from '@/theme/theme';
 
 const nav = [
@@ -20,13 +21,19 @@ export default function Header() {
       className="sticky top-0 z-50 text-white"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
-        {/* Brand */}
-        <Link
-          href="/"
-          className="select-none text-xl md:text-2xl font-extrabold tracking-tight"
-          style={{ color: '#0B1221' }}
-        >
-          Pro Page Digital
+        {/* Brand (logo + name) */}
+        <Link href="/" className="flex items-center gap-3 select-none">
+          <Image
+            src="/assets/propage_logo.png"
+            alt="Propage Digital logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-md"
+            priority
+          />
+          <span className="text-white text-xl md:text-2xl font-extrabold tracking-tight">
+            Propage Digital
+          </span>
         </Link>
 
         {/* Desktop Nav */}

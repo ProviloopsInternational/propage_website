@@ -6,8 +6,8 @@ import FAQ from '../components/home/FAQ';
 import CTAConsultation from '../components/global/CTAConsultation';
 
 export const metadata = createMetadata({
-  title: 'Pro Page Digital - Guest Posting & Blogger Outreach',
-  description: 'The Finest Guest Posting Services',
+  title: 'Pro Page Digital - Your Growth, Backed by Quality Links!',
+  description: 'We specialize in creating and placing high-quality guest posts that build authority and drive results.',
   url: 'https://propagedigital.com/',
 });
 

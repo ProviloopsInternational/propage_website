@@ -42,10 +42,10 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
           <div>
             <div className="text-2xl font-extrabold tracking-tight text-gray-900">
-              Pro Page Digital
+              Propage Digital
             </div>
             <p className="mt-1 text-sm text-gray-600">
-              SEO-driven guest posting & outreach—quality placements, clean processes, real results.
+              Building authority through real connections and quality content.
             </p>
           </div>
 
@@ -114,12 +114,12 @@ export default function Footer() {
             <ul className="mt-3 space-y-2">
               <li>
                 <a href="mailto:hello@example.com" className="text-sm text-gray-600 hover:text-gray-900 transition">
-                  hello@example.com
+                  hello@propagedigital.com
                 </a>
               </li>
               <li>
                 <a href="tel:+00000000000" className="text-sm text-gray-600 hover:text-gray-900 transition">
-                  +00 000 000 0000
+                 +44 (746) 6172010
                 </a>
               </li>
               <li className="text-sm text-gray-600">Mon–Fri · 24/5 Support</li>
@@ -129,14 +129,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-gray-200 pt-6 text-sm text-gray-600 md:flex-row md:items-center">
-          <div>© {year} Pro Page Digital. All rights reserved.</div>
-          <div className="flex items-center gap-4">
-            <Link href="/terms" className="hover:text-gray-900 transition">Terms</Link>
-            <span aria-hidden className="text-gray-300">•</span>
-            <Link href="/privacy" className="hover:text-gray-900 transition">Privacy</Link>
-            <span aria-hidden className="text-gray-300">•</span>
-            <Link href="/sitemap.xml" className="hover:text-gray-900 transition">Sitemap</Link>
-          </div>
+          <div>© {year} Propage Digital. All rights reserved.</div>
         </div>
       </div>
     </footer>

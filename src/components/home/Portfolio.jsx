@@ -48,47 +48,45 @@ export default function Portfolio() {
           {/* 1 */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-gray-900">
-              1) Large, vetted publisher inventory
+              1) Wide network of trusted publishers
             </h3>
             <p className="mt-2 text-gray-700">
-              Access hundreds of real websites across niches and regions. Typical thresholds we work with:
-              <strong> DR 20+</strong> and
-              <strong> 300+ monthly visits</strong>, so every placement contributes meaningful visibility.
+              We’ve built strong relationships with real websites across different niches and regions. 
+              Most of the sites we work with have <strong>DR 20+ </strong> and <strong> 500+ monthly visitors,</strong> so every placement drives real visibility and results.
             </p>
           </div>
 
           {/* 2 */}
           <div className="mt-6">
             <h3 className="text-lg font-semibold text-gray-900">
-              2) Blogger outreach—end to end
+              2) Complete blogger outreach
             </h3>
             <p className="mt-2 text-gray-700">
-              From prospecting and due diligence to editor negotiations and scheduling, our outreach team can unlock
-              almost any niche and coordinate with publishers worldwide.
+              From finding the right websites to negotiating with editors and managing publishing, our outreach team handles everything. 
+              We make sure your content gets placed on relevant sites that match your goals.
             </p>
           </div>
 
           {/* 3 */}
           <div className="mt-6">
             <h3 className="text-lg font-semibold text-gray-900">
-              3) Pro Page Digital services you can rely on
+              3) Services you can count on
             </h3>
             <ul className="mt-3 space-y-2 text-gray-700">
-              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Outstanding guest-post content</li>
-              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Transparent, trackable approvals</li>
-              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Up-to-date research & planning</li>
-              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Seamless anchor selection & placement</li>
+              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> High-quality guest post content</li>
+              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Transparent and trackable approvals</li>
+              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Research-driven planning</li>
+              <li className="flex gap-2"><Check className="mt-0.5 text-gray-400" /> Smart anchor text selection and placement</li>
             </ul>
           </div>
 
           {/* 4 */}
           <div className="mt-6">
             <h3 className="text-lg font-semibold text-gray-900">
-              4) Streamlined, low-friction link building
+              4) Simple, hassle-free link building
             </h3>
             <p className="mt-2 text-gray-700">
-              We make link acquisition simple—clear steps, fast turnarounds, and <strong>do-follow links</strong> that meet
-              quality standards and deliver lasting value.
+              We make link building straightforward with clear steps, quick turnaround times, and do-follow links that meet quality standards while bringing long-term value.
             </p>
           </div>
         </div>
