@@ -46,8 +46,8 @@ export default function ClientServicesPage() {
               transition={{ duration: 0.55, delay: 0.05 }}
               className="mt-3 text-4xl font-extrabold tracking-tight md:text-6xl"
             >
-              Guest Posting & Link Insertion,
-              <br className="hidden sm:block" /> done right.
+              SEO & Web Solutions,
+              <br className="hidden sm:block" /> Done Right.
             </motion.h1>
 
             <motion.p
@@ -56,8 +56,8 @@ export default function ClientServicesPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-4 max-w-xl text-white/90"
             >
-              We make guest posting simple, transparent, and effective. Our focus is on securing placements that build your authority and bring long-term value, not just quick wins. 
-              With us, you’ll always know where your content is going, why it matters, and how it’s helping your brand grow.
+              We make SEO and web solutions simple, transparent, and effective. From on-page tweaks and off-page strategies to technical improvements and smart web development, we focus on what truly matters. We help your website rank higher, attract more visitors, and grow your brand. 
+              With us, you’ll always know what’s being done, why it matters, and the impact it’s having on your business.
             </motion.p>
 
             <motion.div
@@ -271,6 +271,52 @@ export default function ClientServicesPage() {
               title: 'Backlink Management',
               desc:
                 'Every insertion is tracked and reported, so you know exactly what you’re getting.',
+            },
+          ].map((c, i) => (
+            <motion.div
+              key={c.title}
+              initial={{ y: 8, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.45, delay: i * 0.05 }}
+              className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-100"
+            >
+              <div className="text-lg font-semibold text-gray-900">{c.title}</div>
+              <p className="mt-2 text-gray-700">{c.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </Section>
+
+      {/* C. SEO Services */}
+      <Section className="py-16 md:py-24">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
+            C. SEO Services
+          </h2>
+          <p className="mt-4 text-gray-700">
+           SEO (Search Engine Optimization) is how your website gets noticed on search engines. 
+           It helps your business reach the right audience, attract more visitors, and generate meaningful leads. Investing in SEO means your brand stays visible, competitive, and growing online
+          </p>
+        </div>
+
+        {/* Why it’s worth your time + what we do */}
+        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-3">
+          {[
+            {
+              title: 'On-Page SEO',
+              desc:
+                'Optimize every page with the right structure, content, and keywords to make your site search-engine friendly and user-ready.',
+            },
+            {
+              title: 'Off-Page SEO',
+              desc:
+                'Build authority and credibility with smart link strategies and outreach that drive traffic and strengthen your online presence.',
+            },
+            {
+              title: 'SEO-Optimized Web Solutions',
+              desc:
+                'Combine technical improvements and web optimization to ensure your site ranks higher, performs better, and delivers real results.',
             },
           ].map((c, i) => (
             <motion.div
