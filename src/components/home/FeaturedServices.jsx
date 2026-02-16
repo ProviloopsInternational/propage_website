@@ -64,6 +64,38 @@ const SERVICES = [
       'Amplification assets included',
     ],
   },
+   {
+    title: 'On-Page SEO',
+    desc:
+      'Optimize your website content, meta tags, and internal structure to improve rankings and user engagement.',
+    highlights: [
+      'Keyword-focused content & headings',
+      'Meta tags & structured data optimization',
+      'Internal linking strategy for better crawlability',
+    ],
+  },
+  {
+    title: 'Off-Page SEO',
+    desc:
+      'Build authority and drive traffic with high-quality backlinks from trusted sources.',
+    highlights: [
+      'Guest posts & link insertion campaigns',
+      'Authority site placements',
+      'Niche-specific link building',
+    ],
+  },
+  {
+    title: 'SEO-Optimized Web Solutions',
+    desc:
+      'Ensure your website is fast, crawlable, and fully optimized for search engines while providing a seamless user experience.',
+    highlights: [
+      'Site speed & performance improvements',
+      'Mobile responsiveness & core web vitals optimization',
+      'Crawlability, indexing & structured data',
+      'Clean, optimized code and secure architecture',
+      'SEO-friendly website architecture & navigation',
+    ],
+  },
 ];
 
 function Check({ className }) {

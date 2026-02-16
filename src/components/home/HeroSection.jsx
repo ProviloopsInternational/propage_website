@@ -45,14 +45,12 @@ export default function Hero() {
         {/* LEFT — Text */}
         <div className="text-white">
           <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
-            Your Growth, Backed by Quality Links
+            Your Growth, Backed by Proven Digital Solutions
           </h1>
 
           <p className="mt-5 text-base leading-relaxed text-white/90 md:text-lg">
 
-            We specialize in creating and placing high-quality guest posts that build authority and drive results. 
-            <span className="font-semibold">Our team </span>works closely with trusted blogs and publishers worldwide, so every link you get is relevant, do-follow, and valuable for your SEO.
-            From content creation to placement approval, we make the entire process smooth and transparent, giving you links that actually move the needle.
+            Our global network of trusted bloggers builds links that matter, and expert developers make sure your website ranks higher, loads faster, and drives real results. Together, we help your brand grow, get noticed, and stay ahead in the digital space.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
