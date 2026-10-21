@@ -1,16 +1,36 @@
-import './globals.css';
-import Header from '@/components/global/Header';
-import Footer from '@/components/global/Footer';
-import Script from 'next/script';
-import AnalyticsTracker from '@/lib/AnalyticsTracker';
-import ScrollToTopButton from '../components/global/ScrollToTopButton';
+// Stylesheet order mirrors the design reference's cascade.
+import "@/styles/premium-home.css";
+import "./globals.css";
+import "@/styles/shared.css";
+import "@/styles/home-hero.css";
+import "@/styles/home-sections.css";
+import "@/styles/shared-footer-responsive.css";
+import "@/styles/about.css";
+import "@/styles/services.css";
+import "@/styles/guest-posting.css";
+import "@/styles/high-quality-backlinks.css";
+import "@/styles/contact.css";
+import "@/styles/privacy.css";
+import "@/styles/corporate.css";
+import "@/styles/redesign.css";
+import Script from "next/script";
+import AnalyticsTracker from "@/lib/AnalyticsTracker";
+import ScrollToTopButton from "../components/global/ScrollToTopButton";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" media="(prefers-color-scheme: light)" />
-        <link rel="icon" href="/favicon.ico" media="(prefers-color-scheme: dark)" />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+          media="(prefers-color-scheme: dark)"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
 
@@ -31,12 +51,10 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      {/* Use your own CSS (globals.css sets Arial/Helvetica already) */}
+      {/* Header and Footer render inside each page's .site-shell, as the design's page-scoped styles expect */}
       <body className="min-h-dvh antialiased">
-        <Header />
         <AnalyticsTracker />
         {children}
-        <Footer />
         <ScrollToTopButton />
       </body>
     </html>

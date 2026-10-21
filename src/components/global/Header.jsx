@@ -1,101 +1,146 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import theme from '@/theme/theme';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
-const nav = [
-  { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services' },
-  { href: '/about', label: 'About Us' },
-  { href: '/contact', label: 'Contact Us' },
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/contact" },
 ];
+
+function MenuIcon({ open }) {
+  return (
+    <span className="menu-icon" aria-hidden="true">
+      <span className={open ? "open" : ""} />
+      <span className={open ? "open" : ""} />
+      <span className={open ? "open" : ""} />
+    </span>
+  );
+}
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const currentPath = usePathname() || "/";
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 18);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        document.getElementById("mobile-menu-toggle")?.focus();
+      }
+    };
+    if (open) document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
 
   return (
     <header
-      style={{ background: theme.colors.backgroundGradient }}
-      className="sticky top-0 z-50 text-white"
+      className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
-        {/* Brand (logo + name) */}
-        <Link href="/" className="flex items-center gap-3 select-none">
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+      <div className="container nav-wrap">
+        <Link
+          className="brand header-brand"
+          href="/"
+          aria-label="Propage Digital home"
+        >
           <Image
-            src="/assets/propage_logo.png"
-            alt="Propage Digital logo"
-            width={36}
-            height={36}
-            className="h-9 w-9 rounded-md"
+            src={
+              scrolled
+                ? "/assets/propage-logo-dark.png"
+                : "/assets/propage-logo-white.png"
+            }
+            alt="Propage Digital"
+            width={1409}
+            height={213}
+            className="brand-logo header-brand-logo"
             priority
           />
-          <span className="text-white text-xl md:text-2xl font-extrabold tracking-tight">
-            Propage Digital
-          </span>
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-white/95 hover:text-white transition font-medium"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <nav className="desktop-nav" aria-label="Primary navigation">
+          {navItems.map((item) => {
+            const active =
+              item.href === "/"
+                ? currentPath === "/"
+                : currentPath === item.href ||
+                  currentPath.startsWith(`${item.href}/`);
 
-          {/* CTA (white pill) */}
-          <Link
-            href="/contact"
-            className="rounded-full bg-white text-black px-6 py-2.5 font-semibold shadow hover:opacity-90"
-          >
-            Book a consultation
-          </Link>
-        </nav>
-
-        {/* Mobile: hamburger */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Open menu"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-white/15 text-white hover:bg-white/20"
-          >
-            <span className="sr-only">Menu</span>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden border-t border-white/10">
-          <nav className="mx-auto max-w-7xl px-4 py-3 space-y-2">
-            {nav.map((item) => (
+            return (
               <Link
                 key={item.href}
+                className={active ? "nav-link active" : "nav-link"}
                 href={item.href}
-                onClick={() => setOpen(false)}
-                className="block rounded-lg px-3 py-2 text-white/95 hover:bg-white/10"
+                aria-current={active ? "page" : undefined}
               >
                 {item.label}
               </Link>
-            ))}
-            <Link
-              href="/contact"
-              onClick={() => setOpen(false)}
-              className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-2.5 font-semibold text-black shadow"
-            >
-              Book a consultation
-            </Link>
-          </nav>
+            );
+          })}
+        </nav>
+
+        <div className="nav-actions">
+          <a className="nav-text-link" href="mailto:hello@propagedigital.com">
+            hello@propagedigital.com
+          </a>
+          <Link className="button button--small button--dark" href="/contact">
+            Start a project
+            <span aria-hidden="true">↗</span>
+          </Link>
         </div>
-      )}
+
+        <button
+          type="button"
+          className="mobile-menu-button"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
+          id="mobile-menu-toggle"
+          onClick={() => setOpen((value) => !value)}
+        >
+          <MenuIcon open={open} />
+        </button>
+      </div>
+
+      <div
+        id="mobile-navigation"
+        inert={!open}
+        className={`mobile-menu ${open ? "mobile-menu--open" : ""}`}
+      >
+        <div className="container mobile-menu-inner">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setOpen(false)}
+            >
+              {item.label}
+              <span>↗</span>
+            </Link>
+          ))}
+          <Link
+            className="button button--dark mobile-cta"
+            href="/contact"
+            onClick={() => setOpen(false)}
+          >
+            Start a project
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }
