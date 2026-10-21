@@ -1,0 +1,617 @@
+/* Layout refresh. The approved brand palette remains defined in corporate.css. */
+.container {
+  width: min(1280px, calc(100% - 96px));
+}
+.site-shell h1,
+.site-shell h2,
+.site-shell h3 {
+  letter-spacing: -0.045em;
+}
+.site-header,
+.site-header--scrolled {
+  height: 88px;
+}
+.nav-wrap {
+  gap: 40px;
+}
+.desktop-nav {
+  gap: 15px;
+}
+.nav-link {
+  font-size: 13px;
+}
+.nav-actions {
+  margin-left: 36px;
+}
+.button,
+.button--small {
+  border-radius: 999px;
+  box-shadow: none;
+}
+.button {
+  min-height: 54px;
+  padding-inline: 25px;
+  font-size: 13px;
+}
+.button--small {
+  min-height: 44px;
+  padding-inline: 22px;
+}
+.site-header:not(.site-header--scrolled) .button--dark {
+  box-shadow: none;
+}
+.button--white,
+.button--glass {
+  box-shadow: none;
+}
+.button--glass {
+  backdrop-filter: none;
+  background: transparent;
+}
+.site-footer {
+  border-radius: 0;
+  box-shadow: none;
+  border-inline: 0;
+  padding-top: 80px;
+}
+.footer-top {
+  gap: 36px;
+}
+.footer-brand-block > p {
+  max-width: 250px;
+}
+.footer-label {
+  font-size: 11px;
+}
+.footer-column a {
+  width: fit-content;
+}
+.footer-contact a {
+  overflow-wrap: anywhere;
+}
+.footer-bottom {
+  margin-top: 64px;
+}
+
+/* Carry the same spacing, type hierarchy and simpler surfaces to inner pages. */
+.about-hero,
+.services-hero,
+.guest-hero,
+.hq-hero,
+.contact-hero,
+.privacy-hero {
+  padding-top: 170px;
+}
+.about-hero-copy h1,
+.services-hero-copy h1,
+.guest-hero-copy h1,
+.hq-hero-copy h1,
+.contact-hero-copy h1,
+.privacy-hero h1 {
+  font-size: clamp(44px, 5.4vw, 76px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+}
+.about-hero-layout,
+.services-hero-layout,
+.guest-hero-layout,
+.hq-hero-layout {
+  gap: 88px;
+  padding-bottom: 80px;
+}
+.about-campaign-window,
+.services-stack-main,
+.guest-dashboard,
+.hq-console {
+  border-radius: 5px;
+  box-shadow: none;
+}
+.section,
+.services-explorer-section,
+.services-quality-section,
+.services-delivery-section,
+.guest-intro-section,
+.guest-quality-section,
+.guest-process-section,
+.hq-intro-section,
+.hq-dark-section,
+.hq-process-section {
+  padding-block: 100px;
+}
+.about-principles-grid,
+.services-delivery-grid {
+  gap: 0;
+  border-block: 1px solid var(--line);
+}
+.about-principle-card,
+.services-delivery-card {
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  padding: 34px;
+}
+.about-principle-card:last-child,
+.services-delivery-card:last-child {
+  border-right: 0;
+}
+.about-principle-card:hover,
+.services-delivery-card:hover {
+  background: transparent;
+}
+.about-principle-line {
+  display: none;
+}
+.about-process-panel,
+.specialist-dashboard,
+.services-quality-board,
+.guest-quality-panel,
+.hq-dark-panel {
+  border-radius: 5px;
+}
+.services-category-tabs {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+  gap: 12px;
+}
+.services-category-tabs button {
+  border-radius: 999px;
+  padding-inline: 22px;
+}
+.services-explorer-grid {
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+}
+.services-selector-item {
+  border-radius: 0;
+  padding-block: 18px;
+}
+.services-detail-panel {
+  padding: 48px;
+  border-radius: 6px;
+  box-shadow: none;
+  border-top: 3px solid var(--purple);
+}
+.services-detail-panel h3 {
+  font-weight: 600;
+}
+.services-detail-points > div {
+  background: transparent;
+  border-bottom: 1px solid var(--line);
+  padding-inline: 0;
+  border-radius: 0;
+}
+.services-quality-layout,
+.guest-quality-grid,
+.hq-dark-grid {
+  gap: 80px;
+}
+.cta-card,
+.about-final-cta,
+.services-cta-card,
+.guest-cta-card,
+.hq-cta-card {
+  border-radius: 6px;
+  box-shadow: none;
+  padding: 64px;
+}
+.contact-form-card,
+.contact-side-card {
+  border-radius: 6px;
+  box-shadow: none;
+}
+.contact-form-card {
+  border-top: 3px solid var(--purple);
+}
+.contact-form-card input,
+.contact-form-card select,
+.contact-form-card textarea {
+  border-radius: 5px;
+}
+.contact-bottom-card,
+.privacy-content,
+.privacy-nav {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: calc(100% - 64px);
+  }
+  .nav-wrap {
+    gap: 20px;
+  }
+  .desktop-nav {
+    gap: 2px;
+  }
+  .nav-actions {
+    margin-left: 10px;
+  }
+  .about-hero-layout,
+  .services-hero-layout,
+  .guest-hero-layout,
+  .hq-hero-layout {
+    gap: 42px;
+  }
+}
+@media (max-width: 900px) {
+  .site-header,
+  .site-header--scrolled {
+    height: 74px;
+  }
+  .about-hero,
+  .services-hero,
+  .guest-hero,
+  .hq-hero,
+  .contact-hero,
+  .privacy-hero {
+    padding-top: 130px;
+  }
+  .about-hero-layout,
+  .services-hero-layout,
+  .guest-hero-layout,
+  .hq-hero-layout {
+    padding-bottom: 52px;
+  }
+  .services-explorer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .services-quality-layout,
+  .guest-quality-grid,
+  .hq-dark-grid {
+    gap: 40px;
+  }
+  .section,
+  .services-explorer-section,
+  .services-quality-section,
+  .services-delivery-section,
+  .guest-intro-section,
+  .guest-quality-section,
+  .guest-process-section,
+  .hq-intro-section,
+  .hq-dark-section,
+  .hq-process-section {
+    padding-block: 76px;
+  }
+  .about-principle-card,
+  .services-delivery-card {
+    border-bottom: 1px solid var(--line);
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .header-brand-logo,
+  .site-header--scrolled .header-brand-logo {
+    width: 155px;
+  }
+  .site-footer {
+    padding-top: 52px;
+  }
+  .footer-top {
+    gap: 32px 20px;
+  }
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+  .footer-bottom {
+    margin-top: 36px;
+  }
+  .about-hero,
+  .services-hero,
+  .guest-hero,
+  .hq-hero,
+  .contact-hero,
+  .privacy-hero {
+    padding-top: 114px;
+  }
+  .about-hero-copy h1,
+  .services-hero-copy h1,
+  .guest-hero-copy h1,
+  .hq-hero-copy h1,
+  .contact-hero-copy h1,
+  .privacy-hero h1 {
+    font-size: clamp(38px, 10.5vw, 52px);
+  }
+  .section,
+  .services-explorer-section,
+  .services-quality-section,
+  .services-delivery-section,
+  .guest-intro-section,
+  .guest-quality-section,
+  .guest-process-section,
+  .hq-intro-section,
+  .hq-dark-section,
+  .hq-process-section {
+    padding-block: 60px;
+  }
+  .about-principle-card,
+  .services-delivery-card {
+    border-right: 0;
+    padding: 28px 0;
+  }
+  .services-category-tabs {
+    gap: 8px;
+  }
+  .services-category-tabs button {
+    padding-inline: 13px;
+    font-size: 11px;
+  }
+  .services-detail-panel {
+    padding: 27px;
+  }
+  .cta-card,
+  .about-final-cta,
+  .services-cta-card,
+  .guest-cta-card,
+  .hq-cta-card {
+    padding: 32px 24px;
+  }
+}
+
+/* Bottom CTAs: one centered message, with no side illustration. */
+.site-shell
+  :is(.about-final-cta, .services-cta-card, .guest-cta-card, .hq-cta-card) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center;
+  gap: 0;
+  text-align: center;
+}
+.site-shell
+  :is(.about-final-copy, .services-cta-copy, .guest-cta-copy, .hq-cta-copy) {
+  width: 100%;
+  max-width: 740px;
+  margin-inline: auto;
+  text-align: center;
+}
+.site-shell
+  :is(.about-final-copy, .services-cta-copy, .guest-cta-copy, .hq-cta-copy)
+  > :is(h2, p) {
+  margin-inline: auto;
+}
+.site-shell
+  :is(.about-final-copy, .services-cta-copy, .guest-cta-copy, .hq-cta-copy)
+  > p {
+  max-width: 600px;
+}
+.site-shell :is(.services-cta-actions, .guest-cta-actions, .hq-cta-actions) {
+  justify-content: center;
+}
+.site-shell .contact-bottom-card {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  text-align: center;
+}
+.site-shell .contact-bottom-card p {
+  margin-inline: auto;
+}
+.site-shell .contact-bottom-meta {
+  justify-content: center;
+}
+.premium-home .px-finale {
+  text-align: center;
+}
+.premium-home .px-finale-top {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.premium-home .px-finale-link {
+  justify-content: center;
+  padding-block: 10px 42px;
+}
+.premium-home .px-finale-bottom {
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.premium-home .px-finale-bottom > span {
+  width: auto;
+}
+@media (max-width: 620px) {
+  .premium-home .px-finale-link {
+    padding-bottom: 30px;
+  }
+}
+
+/* Compact CTA proportions and the strategy badge. */
+.site-shell
+  :is(.about-final-cta, .services-cta-card, .guest-cta-card, .hq-cta-card) {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+  padding: 48px 40px;
+}
+.site-shell .cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 36px;
+  padding: 7px 13px;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 6px;
+  background: rgb(255 255 255 / 8%);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.cta-radar {
+  flex-shrink: 0;
+  overflow: visible;
+}
+.cta-radar-sweep {
+  transform-origin: 12px 12px;
+  animation: cta-radar-scan 4s linear infinite;
+}
+.cta-radar-point {
+  animation: cta-radar-ping 4s ease-in-out infinite;
+}
+@keyframes cta-radar-scan {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cta-radar-ping {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  25%,
+  45% {
+    opacity: 1;
+  }
+}
+.site-shell
+  :is(.about-final-copy, .services-cta-copy, .guest-cta-copy, .hq-cta-copy)
+  > .cta-eyebrow {
+  margin-bottom: 18px;
+}
+.site-shell
+  :is(.about-final-copy, .services-cta-copy, .guest-cta-copy, .hq-cta-copy)
+  > h2 {
+  margin-top: 0;
+}
+.premium-home .px-finale {
+  padding: 0 0 72px;
+  background: var(--surface-soft);
+}
+.premium-home .px-finale > .container {
+  max-width: 1100px;
+  padding: 46px 40px 36px;
+  background: var(--hero-gradient);
+  border-radius: 6px;
+}
+.premium-home .px-finale-top {
+  padding-bottom: 22px;
+}
+.premium-home .px-finale-link > span:first-child {
+  font-size: clamp(48px, 6.5vw, 88px);
+}
+.premium-home .px-finale-link {
+  padding-block: 4px 28px;
+}
+.premium-home .px-finale-bottom {
+  padding-top: 22px;
+  gap: 8px;
+}
+@media (max-width: 620px) {
+  .site-shell
+    :is(.about-final-cta, .services-cta-card, .guest-cta-card, .hq-cta-card) {
+    padding: 34px 22px;
+  }
+  .site-shell .cta-eyebrow {
+    font-size: 8px;
+    padding: 6px 10px;
+    gap: 7px;
+  }
+  .premium-home .px-finale {
+    padding-bottom: 48px;
+  }
+  .premium-home .px-finale > .container {
+    padding: 32px 20px;
+  }
+  .premium-home .px-finale-link > span:first-child {
+    font-size: clamp(40px, 10vw, 58px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cta-radar-sweep,
+  .cta-radar-point {
+    animation: none;
+  }
+}
+
+/* Softer corners for the compact campaign CTAs. */
+.site-shell
+  :is(
+    .about-final-cta,
+    .services-cta-card,
+    .guest-cta-card,
+    .hq-cta-card,
+    .contact-bottom-card
+  ),
+.premium-home .px-finale > .container {
+  border-radius: 28px;
+}
+.site-shell .cta-eyebrow {
+  border-radius: 999px;
+}
+@media (max-width: 620px) {
+  .site-shell
+    :is(
+      .about-final-cta,
+      .services-cta-card,
+      .guest-cta-card,
+      .hq-cta-card,
+      .contact-bottom-card
+    ),
+  .premium-home .px-finale > .container {
+    border-radius: 22px;
+  }
+}
+
+/* Oversized closing wordmark, shared by every page. */
+.site-footer .container.footer-wordmark {
+  width: calc(100% - 64px);
+  max-width: none;
+  margin-top: 38px;
+  color: var(--ink);
+  opacity: 0.065;
+}
+.site-footer .footer-wordmark svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+/* Decorative wordmark overlaps the footer-bottom links; let clicks pass through. */
+.site-footer .footer-wordmark {
+  pointer-events: none;
+}
+.site-footer .footer-wordmark text {
+  font-family: var(--font-display);
+  font-size: 230px;
+  font-weight: 800;
+  letter-spacing: -12px;
+}
+@media (max-width: 620px) {
+  .site-footer .container.footer-wordmark {
+    width: calc(100% - 32px);
+    margin-top: 28px;
+  }
+}
+
+/* Restore the footer’s rounded upper edge. */
+.site-shell .site-footer {
+  border-radius: 32px 32px 0 0;
+}
+@media (max-width: 620px) {
+  .site-shell .site-footer {
+    border-radius: 24px 24px 0 0;
+  }
+}
+
+/* Home consultation CTA: a button, without the dividing rule. */
+.premium-home .px-finale-bottom {
+  border-top: 0;
+  padding-top: 0;
+  gap: 18px;
+}
+.premium-home .px-finale-bottom .px-consultation-button {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 54px;
+  padding: 0 26px;
+  gap: 12px;
+  border-radius: 999px;
+  color: var(--indigo);
+  background: var(--surface);
+  box-shadow: none;
+}
